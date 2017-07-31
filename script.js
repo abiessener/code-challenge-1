@@ -1,4 +1,4 @@
-
+// this is kinda ugly. i'd abstractsome of this stuff into functions and comment it a little better if it were production code
 
 
 $(document).ready(function(){
@@ -14,4 +14,13 @@ $(document).ready(function(){
 
     })
 
+    $('#genButton').parent().on('click', '.swapButton', function(){
+        // console.log($(this).parent().css('background-color'));
+        
+        if ($(this).parent().css('background-color') == 'rgb(255, 0, 0)'){
+            $(this).parent().css('background-color', 'yellow');
+        } else if ($(this).parent().css('background-color') == 'rgb(255, 255, 0)'){
+            $(this).parent().css('background-color', 'red');
+        }
+    });
 });
