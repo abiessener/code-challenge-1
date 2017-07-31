@@ -6,7 +6,7 @@ $(document).ready(function(){
 
     $('#genButton').on('click', function(){
         clickCounter++;
-        $(this).parent().append('<div class=\'addedDiv\'><p>' + clickCounter + '</p></div>');
+        $(this).parent().append('<div class=\'addedDiv\'><p>' + clickCounter + '</p><button class=\'swapButton\'>Swap</button>' + '<button class=\'deleteButton\'>Delete</button></div>');
     });
 
 });
