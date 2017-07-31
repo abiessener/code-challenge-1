@@ -2,8 +2,11 @@
 
 
 $(document).ready(function(){
+    var clickCounter = 0;
+
     $('#genButton').on('click', function(){
-        $(this).parent().append('<div class=\'addedDiv\'></div>');
+        clickCounter++;
+        $(this).parent().append('<div class=\'addedDiv\'><p>' + clickCounter + '</p></div>');
     });
 
 });
